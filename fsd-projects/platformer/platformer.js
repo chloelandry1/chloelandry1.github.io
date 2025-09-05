@@ -42,11 +42,11 @@ $(function () {
 
 
     // TODO 3 - Create Collectables
-    createCollectable("apple", 375, 550, .1, .5);
-    createCollectable("apple", 225, 125, .1, .5);
-    createCollectable("apple", 1175, 275, .1, .5);
-    createCollectable("apple", 775, 220, .1, .5);
-    createCollectable("apple", 1225, 50, .1, .5);
+    createCollectable("apple1", 375, 550, .1, .5);
+    createCollectable("apple2", 225, 125, .1, .5);
+    createCollectable("apple3", 1175, 275, .1, .5);
+    createCollectable("apple4", 775, 220, .1, .5);
+    createCollectable("apple5", 1225, 50, .1, .5);
 
 
     
