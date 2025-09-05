@@ -27,26 +27,26 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
+    //toggleGrid();
 
 
     // TODO 2 - Create Platforms
-    createPlatform(300, 625, 200, 25, "pink");
-    createPlatform(500, 525, 400, 25, "pink");
-    createPlatform(200, 400, 400, 25, "pink");
-    createPlatform(600, 260, 400, 25, "pink");
-    createPlatform(100, 175, 300, 25, "pink");
-    createPlatform(1100, 120, 300, 25, "pink");
-    createPlatform(1100, 325, 200, 25, "pink");
+    createPlatform(300, 625, 200, 25, "#964B00");
+    createPlatform(500, 525, 400, 25, "#964B00");
+    createPlatform(200, 400, 400, 25, "#964B00");
+    createPlatform(600, 260, 400, 25, "#964B00");
+    createPlatform(100, 175, 300, 25, "#964B00");
+    createPlatform(1100, 120, 300, 25, "#964B00");
+    createPlatform(1100, 325, 200, 25, "#964B00");
 
 
 
     // TODO 3 - Create Collectables
-    createCollectable("diamond", 375, 550, .1, .5);
-    createCollectable("diamond", 225, 125, .1, .5);
-    createCollectable("diamond", 1175, 275, .1, .5);
-    createCollectable("diamond", 775, 220, .1, .5);
-    createCollectable("diamond", 1225, 50, .1, .5);
+    createCollectable("apple", 375, 550, .1, .5);
+    createCollectable("apple", 225, 125, .1, .5);
+    createCollectable("apple", 1175, 275, .1, .5);
+    createCollectable("apple", 775, 220, .1, .5);
+    createCollectable("apple", 1225, 50, .1, .5);
 
 
     
