@@ -100,7 +100,7 @@ var collectableList = {
   steve: { image: "images/collectables/steve-head.png" },
   apple1: { image: "images/collectables/apples.png" },
   apple2: { image: "images/collectables/apple_2.png" },
-  apple3: { image: "images/collectables/apples.png" },
-  apple4: { image: "images/collectables/apples.png" },
-  apple5: { image: "images/collectables/apples.png" },
+  apple3: { image: "images/collectables/Apple_3.png" },
+  apple4: { image: "images/collectables/apple_4.png" },
+  apple5: { image: "images/collectables/apple_5.png" },
 };
