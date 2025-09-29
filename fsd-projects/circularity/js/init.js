@@ -95,15 +95,15 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            // if the circle has gone past the left side of the screen then place it on the right
+            // if the circle has gone past the left side of the screen then place it on the right. If the x of the circle is less than a value of 0, then the x of the circle will be replaced with the x of the canvas, moving it to the other side.
             if ( circle.x < 0) {
                 circle.x = canvas.width;
             }
-            // if the cirlce has gone past the top of the screen then place it on the bottom
+            // if the cirlce has gone past the top of the screen then place it on the bottom. If the y of the circle is greater than than the value of the y of of the canvas, then the y of the circle will be replaced with a value of 0, moving it to the bottom.
             if ( circle.y > canvas.height ) {
                 circle.y = 0;
             }
-            // if the circle has gone past the bottom of the screen then place it on the top
+            // if the circle has gone past the bottom of the screen then place it on the top. If the y of the circle is less than a value of 0, then the y of the circle will be replaced with the y of the canvas, moving it to the top.
             if ( circle.y < 0) {
                 circle.y = canvas.height;
             }
