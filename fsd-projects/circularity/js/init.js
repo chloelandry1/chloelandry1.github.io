@@ -35,14 +35,14 @@ var init = function (window) {
 
 
         // TODO 3 : Call the drawCircle() function
-        //drawCircle(); // adds one circle to the canvas
-        //drawCircle(); // adds one circle to the canvas
-        //drawCircle(); // adds one circle to the canvas
-        //drawCircle(); // adds one circle to the canvas
-        //drawCircle(); // adds one circle to the canvas
+        //drawCircle(); // calls the function drawCircle, which draws one circle onto the canvas
+        //drawCircle(); // calls the function drawCircle, which draws one circle onto the canvas
+        //drawCircle(); // calls the function drawCircle, which draws one circle onto the canvas
+        //drawCircle(); // calls the function drawCircle, which draws one circle onto the canvas
+        //drawCircle(); // calls the function drawCircle, which draws one circle onto the canvas
 
         // TODO 7 : Use a loop to create multiple circles
-        // creates a loop that starts at the first index in the circles array an calls the drawCircles(); function, and stops at array 100, and goes up by one each time.
+        // creates a loop that starts at the first index in the circles array and calls the drawCircles(); function, and stops when the number of the index is greater than one hundred, since the stop statement becomes equal to false, and goes up by one each time, which draws circles one hundred times onto the canvas.
         for (var i = 0; i < 100; i++) {
             drawCircle();
         }
@@ -60,18 +60,18 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the position of each circle using physikz.updatePosition()
-            //physikz.updatePosition(circles[0]); // moves the circles across the screen
-            //physikz.updatePosition(circles[1]); // moves the circles across the screen
-            //physikz.updatePosition(circles[2]); // moves the circles across the screen
-            //physikz.updatePosition(circles[3]); // moves the circles across the screen
-            //physikz.updatePosition(circles[4]); // moves the circles across the screen
+            //physikz.updatePosition(circles[0]); // constantly updates the position of the circle, and moves the circles across the screen
+            //physikz.updatePosition(circles[1]); // constantly updates the position of the circle, and moves the circles across the screen
+            //physikz.updatePosition(circles[2]); // constantly updates the position of the circle, and moves the circles across the screen
+            //physikz.updatePosition(circles[3]); // constantly updates the position of the circle, and moves the circles across the screen
+            //physikz.updatePosition(circles[4]); // constantly updates the position of the circle, and moves the circles across the screen
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
-            //game.checkCirclePosition(circles[0]); // make any circles that move off the screen reappear on the other side.
-            //game.checkCirclePosition(circles[1]); // make any circles that move off the screen reappear on the other side.
-            //game.checkCirclePosition(circles[2]); // make any circles that move off the screen reappear on the other side.
-            //game.checkCirclePosition(circles[3]); // make any circles that move off the screen reappear on the other side.
-            //game.checkCirclePosition(circles[4]); // make any circles that move off the screen reappear on the other side.
+            //game.checkCirclePosition(circles[0]); // checks the x and y position of the circle, and if the x and y is outside of the screen bounds, then it changes the position of the circle, and makes any circles that move off the screen rr on teappeahe other side.
+            //game.checkCirclePosition(circles[1]); // checks the x and y position of the circle, and if the x and y is outside of the screen bounds, then it changes the position of the circle, and makes any circles that move off the screen rr on teappeahe other side.
+            //game.checkCirclePosition(circles[2]); // checks the x and y position of the circle, and if the x and y is outside of the screen bounds, then it changes the position of the circle, and makes any circles that move off the screen rr on teappeahe other side.
+            //game.checkCirclePosition(circles[3]); // checks the x and y position of the circle, and if the x and y is outside of the screen bounds, then it changes the position of the circle, and makes any circles that move off the screen rr on teappeahe other side.
+            //game.checkCirclePosition(circles[4]); // checks the x and y position of the circle, and if the x and y is outside of the screen bounds, then it changes the position of the circle, and makes any circles that move off the screen rr on teappeahe other side.
 
             // TODO 8 / TODO 9 : Iterate over the array
             // creates a loop that starts at the first index in the circles array and calls the physikz.updatePosition(); function, which passes circles array as an argument and has i as the index and moves the circles across the screen, and calls the game.checkCirclePosition(); function, which passes circles array as an argument and has i as the index make any circles that move off the screen reappear on the other side, and stops at the last index of the circles array, and goes up by one each time.
