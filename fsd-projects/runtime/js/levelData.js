@@ -15,9 +15,13 @@ var makeLevelData = function (window) {
         number: 1,
         speed: -3,
         gameItems: [
-          { type: "obstacle", x: 400, y: groundY -110, damage: 10},
-          { type: "obstacle", x: 600, y: groundY -10, damage: 20},
-          { type: "obstacle", x: 800, y: groundY -110, damage: 30},
+          { type: "obstacle", x: 400, y: groundY -110, damage: 10, hitZoneSize: 25, image: "img/spike.png", offsetX: -25, offsetY: -25, rotation: 0, scaleX: .05, scaleY: .05},
+          { type: "obstacle", x: 600, y: groundY -10, damage: 20, hitZoneSize: 25, image: "img/smallRock.png", offsetX: -60, offsetY: -30, rotation: 0, scaleX: .5, scaleY: .5},
+          { type: "obstacle", x: 800, y: groundY -110, damage: 30, hitZoneSize: 25, image: "img/sawblade.png", offsetX: -25, offsetY: -25, rotation: -10, scaleX: 1, scaleY: 1},
+          { type: "enemy", x: 400, y: groundY -50, health: 25, damage: -10, imageX: -25, imageY: -25},
+          { type: "enemy", x: 600, y: groundY -50},
+          { type: "reward", x: 700, y: groundY -75},
+          { type: "levelMarker", x: 1000, y: groundY -75},
         ],
       },
       {
@@ -25,19 +29,12 @@ var makeLevelData = function (window) {
         number: 2,
         speed: -3,
         gameItems: [
-          { type: "obstacle", x: 600, y: groundY -10, damage: 10},
-          { type: "obstacle", x: 800, y: groundY -110, damage: 20},
-          { type: "obstacle", x: 1000, y: groundY -110, damage: 30},
-        ],
-      },
-      {
-        name: "Robot Rampage",
-        number: 2,
-        speed: -3,
-        gameItems: [
-          { type: "enemy", x: 600, y: groundY -50, damage: 10},
-          { type: "enemy", x: 800, y: groundY -50, damage: 20},
-          { type: "enemy", x: 1000, y: groundY -50, damage: 30},
+          { type: "obstacle", x: 600, y: groundY -10, damage: 10, hitZoneSize: 25, image: "img/sawblade.png", offsetX: -25, offsetY: -25, rotation: -10, scaleX: 1, scaleY: 1},
+          { type: "obstacle", x: 800, y: groundY -110, damage: 20, hitZoneSize: 25, image: "img/sawblade.png", offsetX: -25, offsetY: -25, rotation: -10, scaleX: 1, scaleY: 1},
+          { type: "obstacle", x: 1000, y: groundY -110, damage: 30, hitZoneSize: 25, image: "img/sawblade.png", offsetX: -25, offsetY: -25, rotation: -10, scaleX: 1, scaleY: 1},
+          { type: "enemy", x: 400, y: groundY -50},
+          { type: "enemy", x: 600, y: groundY -50},
+          { type: "reward", x: 700, y: groundY -75},
         ],
       },
     ];
