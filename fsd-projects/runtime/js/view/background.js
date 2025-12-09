@@ -49,13 +49,15 @@ var background = function (window) {
             background.addChild(backgroundImage); //adds the backgroundImage to the background object
             
             // TODO 2: - Add a moon and starfield
+            /*
             for(var i = 0; i < 50; i++){
                 var circle = draw.circle(10, "white", "LightGray", 2); //creates a circle with a specified radius, border color, fill color, alpha and stores it in the variable circle
                 circle.x = canvasWidth * Math.random(); //sets a random X position within the canvas width
                 circle.y = groundY * Math.random(); //sets a random Y position within the canvas height
                 background.addChild(circle); //adds the circle to the background container
             }
-            
+            */
+
             var moon = draw.bitmap("img/moon.png"); //creates a bitmap object using the moon image and stores it in the variable moon
             moon.x = canvas.width - 400; //sets the moon's X position 
             moon.y = groundY - 400; //sets the moon's Y position
@@ -65,6 +67,7 @@ var background = function (window) {
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             //creates 5 buildings
+            /*
             for (var i = 0; i < 5; ++i) {
                 var buildingHeight = Math.random() * 600; //stores the height of the buidlings randomly
                 var building = draw.rect(75, buildingHeight, "LightGray", "Black", 1); //creates a rectangle with a specified width, buildingHeight as the height, light gray as the fill color, black as the stroke color, and has a stroke weight of 1
@@ -73,6 +76,7 @@ var background = function (window) {
                 background.addChild(building); //adds the building object to the background container
                 buildings.push(building); //takes the building object and pushes it to the buildings array
             }
+            */
             
             // TODO 3: Part 1 - Add a tree
             tree = draw.bitmap("img/darkForestTrees.png"); //creates a bitmap object using the tree image and stores it in the tree variable
@@ -103,6 +107,7 @@ var background = function (window) {
             
             // TODO 4: Part 2 - Parallax
             //for loop that moves the buildings
+            /*
             for (var i = 0; i < buildings.length; i++) {
                 var building = buildings[i]; //stores the buildings array in the building variable.
                 building.x -= .25; //takes the x value of the building and subracts .25 to move it to the left
@@ -111,7 +116,7 @@ var background = function (window) {
                     building.x = canvasWidth; //sets the x value to the width of the canvas to bring the buildings back
                 }
             }
-
+            */
 
         } // end of update function - DO NOT DELETE
         

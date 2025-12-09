@@ -35,7 +35,7 @@ var runLevels = function (window) {
       obstacleHitZone.rotationalVelocity = rotation; //sets the rotational velocity of the obstacle
     }
 
-    function createEnemy(x, y, hitZone, damage, points, offsetX, offsetY, image, scaleX, scaleY){
+    function createEnemy(x, y, hitZone, damage, points, offsetX, offsetY, image, scaleX, scaleY, velocity){
       var enemy = game.createGameItem("enemy", hitZone); //creates an enemy game item with the enemy type and 25 health and stores in the enemy variable
       var enemyImage = draw.bitmap(image); //draws the enemy image as a bitmap and stores it as an enemy image
       enemyImage.x = offsetX; //x value horizontal offset for the enemy set left 25
@@ -47,7 +47,7 @@ var runLevels = function (window) {
       enemyImage.scaleX = scaleX; //sets the horizontal scale of the enemy
       enemyImage.scaleY = scaleY; //sets the horizontal scale of the enemy
 
-      enemy.velocityX -= 3; //sets the velocity of the x value to -3
+      enemy.velocityX -= velocity; //sets the velocity of the x value to -3
       
       //handles when Halle collides with enemy
       enemy.onPlayerCollision = function(){
@@ -118,7 +118,7 @@ var runLevels = function (window) {
           createObstacle(element.x, element.y, element.damage, element.hitZone, element.image, element.offsetX, element.offsetY, element.rotation, element.scaleX, element.scaleY);
         }
         if(element.type === "enemy"){
-          createEnemy(element.x, element.y, element.hitZone, element.damage, element.points, element.offsetX, element.offsetY, element.image, element.scaleX, element.scaleY);
+          createEnemy(element.x, element.y, element.hitZone, element.damage, element.points, element.offsetX, element.offsetY, element.image, element.scaleX, element.scaleY, element.velocity);
         }
         if(element.type === "reward"){
           createReward(element.x, element.y, element.image, element.offsetX, element.offsetY, element.health, element.scaleX, element.scaleY, element.hitZone, element.velocity);
