@@ -41,11 +41,11 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-            var backgroundImage = draw.bitmap("img/nightSky.png"); //creates a bitmap object using the nightSky image and stores it in the variable backgroundImage
+            var backgroundImage = draw.bitmap("img/darkForestBackground.png"); //creates a bitmap object using the nightSky image and stores it in the variable backgroundImage
             backgroundImage.x = 0;
             backgroundImage.y = 0;
-            backgroundImage.scaleX = 6.85;
-            backgroundImage.scaleY = 2.65;            
+            backgroundImage.scaleX = 1.4;
+            backgroundImage.scaleY = .7;            
             background.addChild(backgroundImage); //adds the backgroundImage to the background object
             
             // TODO 2: - Add a moon and starfield
