@@ -45,7 +45,7 @@ var background = function (window) {
             backgroundImage.x = 0;
             backgroundImage.y = 0;
             backgroundImage.scaleX = 1.4;
-            backgroundImage.scaleY = .7;            
+            backgroundImage.scaleY = .55;            
             background.addChild(backgroundImage); //adds the backgroundImage to the background object
             
             // TODO 2: - Add a moon and starfield
@@ -58,12 +58,14 @@ var background = function (window) {
             }
             */
 
+            /*
             var moon = draw.bitmap("img/moon.png"); //creates a bitmap object using the moon image and stores it in the variable moon
             moon.x = canvas.width - 400; //sets the moon's X position 
             moon.y = groundY - 400; //sets the moon's Y position
             moon.scaleX = .75; //scales the moon's width
             moon.scaleY = .75; // scales the moon's height
             background.addChild(moon); //add the moon to the background container
+            */
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             //creates 5 buildings
@@ -79,9 +81,9 @@ var background = function (window) {
             */
             
             // TODO 3: Part 1 - Add a tree
-            tree = draw.bitmap("img/darkForestTrees.png"); //creates a bitmap object using the tree image and stores it in the tree variable
+            tree = draw.bitmap("img/tree.png"); //creates a bitmap object using the tree image and stores it in the tree variable
             tree.x = 600; //sets the X value of the tree
-            tree.y = groundY - 320; //sets the Y value of the tree
+            tree.y = groundY - 530; //sets the Y value of the tree
             tree.scaleX = 2;
             tree.scaleY = 2;
             background.addChild(tree); //adds the tree to the background container

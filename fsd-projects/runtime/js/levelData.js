@@ -35,9 +35,9 @@ var makeLevelData = function (window) {
         number: 2,
         speed: -3,
         gameItems: [
-          { type: "obstacle", x: 600, y: groundY -20, damage: 10, hitZone: 25, image: "img/treeLog.png", offsetX: -55, offsetY: -25, rotation: 0, scaleX: .5, scaleY: .5},
-          { type: "obstacle", x: 1000, y: groundY -50, damage: 20, hitZone: 25, image: "img/largeRock.png", offsetX: -60, offsetY: -30, rotation: 0, scaleX: .5, scaleY: .5},
-          { type: "obstacle", x: 1500, y: groundY -50, damage: 20, hitZone: 25, image: "img/largeRock.png", offsetX: -60, offsetY: -30, rotation: 0, scaleX: .5, scaleY: .5},
+          { type: "obstacle", x: 600, y: groundY -10, damage: 10, hitZone: 25, image: "img/treeLog.png", offsetX: -55, offsetY: -50, rotation: 0, scaleX: .5, scaleY: .5},
+          { type: "obstacle", x: 1100, y: groundY -40, damage: 20, hitZone: 25, image: "img/largeRock.png", offsetX: -60, offsetY: -30, rotation: 0, scaleX: .45, scaleY: .45},
+          { type: "obstacle", x: 1800, y: groundY -40, damage: 20, hitZone: 25, image: "img/largeRock.png", offsetX: -60, offsetY: -30, rotation: 0, scaleX: .45, scaleY: .45},
           { type: "enemy", x: 900, y: groundY -60, hitZone: 25, damage: -20, offsetX: -25, offsetY: -25, image: "img/wolf.png", scaleX: .5, scaleY: .5, velocity: 4},
           { type: "enemy", x: 1300, y: groundY -50, hitZone: 25, damage: -10, offsetX: -25, offsetY: -25, image: "img/frog.png", scaleX: .25, scaleY: .25, velocity: 3},
           { type: "enemy", x: 2000, y: groundY -120, hitZone: 25, damage: -15, offsetX: -35, offsetY: -25, image: "img/bat.png", scaleX: .25, scaleY: .25, velocity: 6},

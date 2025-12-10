@@ -19,7 +19,12 @@
         
         function render() {
             ground.removeAllChildren();
-            ground.addChild(draw.rect(canvas.width, 10, '#CCC'));
+            ground.x = 0;
+            ground.y = 0;
+            ground.scaleX = 9;
+            ground.scaleY = 2.25;
+            ground.addChild(draw.bitmap("img/forestGround.png"));
+
         }
         
         function resize(argument) {
