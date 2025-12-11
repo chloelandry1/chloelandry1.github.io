@@ -42,10 +42,10 @@ var background = function (window) {
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
             var backgroundImage = draw.bitmap("img/darkForestBackground.png"); //creates a bitmap object using the nightSky image and stores it in the variable backgroundImage
-            backgroundImage.x = 0;
-            backgroundImage.y = 0;
-            backgroundImage.scaleX = 1.4;
-            backgroundImage.scaleY = .55;            
+            backgroundImage.x = 0; //sets the X position of the background
+            backgroundImage.y = 0; //sets the Y position of the background
+            backgroundImage.scaleX = 1.4; //sets the X scale of the background
+            backgroundImage.scaleY = .55; //sets the Y scale of the background
             background.addChild(backgroundImage); //adds the backgroundImage to the background object
             
             // TODO 2: - Add a moon and starfield
@@ -84,8 +84,8 @@ var background = function (window) {
             tree = draw.bitmap("img/tree.png"); //creates a bitmap object using the tree image and stores it in the tree variable
             tree.x = 600; //sets the X value of the tree
             tree.y = groundY - 530; //sets the Y value of the tree
-            tree.scaleX = 2;
-            tree.scaleY = 2;
+            tree.scaleX = 2; //sets the X scale of the tree
+            tree.scaleY = 2; //sets the Y scale of the tree
             background.addChild(tree); //adds the tree to the background container
             
         } // end of render function - DO NOT DELETE

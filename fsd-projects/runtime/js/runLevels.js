@@ -14,7 +14,7 @@ var runLevels = function (window) {
     var levelData = window.opspark.levelData;
 
     // set this to true or false depending on if you want to see hitzones
-    game.setDebugMode(true);
+    game.setDebugMode(false);
 
     // TODOs 5 through 11 go here
     // BEGIN EDITING YOUR CODE HERE
@@ -115,16 +115,20 @@ var runLevels = function (window) {
 
         //checks if the element type is equal to obstacle
         if(element.type === "obstacle"){
-          createObstacle(element.x, element.y, element.damage, element.hitZone, element.image, element.offsetX, element.offsetY, element.rotation, element.scaleX, element.scaleY);
+          createObstacle(element.x, element.y, element.damage, element.hitZone, element.image, element.offsetX, element.offsetY, element.rotation, element.scaleX, element.scaleY); //Adds the x, y, damage, hitZone, image, offsetX, offsetY, rotation, scaleX and scaleY parameters to the element variable
         }
+        //checks if the element type is equal to enemy
         if(element.type === "enemy"){
-          createEnemy(element.x, element.y, element.hitZone, element.damage, element.points, element.offsetX, element.offsetY, element.image, element.scaleX, element.scaleY, element.velocity);
+          createEnemy(element.x, element.y, element.hitZone, element.damage, element.points, element.offsetX, element.offsetY, element.image, element.scaleX, element.scaleY, element.velocity); //Adds the x, y, hitZone, damage, points, offsetX, offsetY, image, scaleX, scaleY, and velocity parameters to the element variable
         }
+        //checks if the element type is equal to reward
         if(element.type === "reward"){
-          createReward(element.x, element.y, element.image, element.offsetX, element.offsetY, element.health, element.scaleX, element.scaleY, element.hitZone, element.velocity);
+          createReward(element.x, element.y, element.image, element.offsetX, element.offsetY, element.health, element.scaleX, element.scaleY, element.hitZone, element.velocity); //Adds the x, y, image, damage, offsetX, offsetY, health, scaleX, scaleY, hitZone, and velocity parameters to the element variable
         }
+        //checks if the element type is equal to levelMarker
+
         if(element.type === "levelMarker"){
-          createLevelMarker(element.x, element.y, element.hitZone, element.image, element.offsetX, element.offsetY, element.scaleX, element.scaleY, element.velocity);
+          createLevelMarker(element.x, element.y, element.hitZone, element.image, element.offsetX, element.offsetY, element.scaleX, element.scaleY, element.velocity); //Adds the x, y, hitZone, image, damage, offsetX, offsetY, scaleX, scaleY, and velocity parameters to the element variable
         }
       }
 

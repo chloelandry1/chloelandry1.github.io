@@ -19,11 +19,11 @@
         
         function render() {
             ground.removeAllChildren();
-            ground.x = 0;
-            ground.y = 0;
-            ground.scaleX = 9;
-            ground.scaleY = 2.25;
-            ground.addChild(draw.bitmap("img/forestGround.png"));
+            ground.x = 0; //sets the X position of the ground
+            ground.y = 0; //sets the Y position of the ground
+            ground.scaleX = 9; //sets the X scale of the ground
+            ground.scaleY = 2.25; //sets the Y scale of the ground
+            ground.addChild(draw.bitmap("img/forestGround.png")); //creates a bitmap using the forestGround image and adds it to the ground object
 
         }
         
